@@ -8,16 +8,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style type="text/css">
-
-
         body {
-        font-family: sans-serif;
-        margin: 0px;
+            font-family: sans-serif;
+            margin: 0px;
         }
+
+        .horizontal {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content:center;
+        }
+
+        .horizontal img {
+            width: 200px;
+            height: 200px;
+        }
+
         header {
-            background-color: #e6e6e6;
+            background-color: #484848;
             padding: 10px;
             text-align: center;
+            color: white;
         }
 
         h1 {
@@ -51,7 +63,7 @@
         #services,
         #about,
         #contact {
-            padding: 20px 20px 20px 20px;
+            padding: 0px 20px 0px 20px;
 
         }
 
@@ -70,27 +82,24 @@
         }
 
         footer {
-            position: fixed; 
-            left: 0; 
-            bottom: 0; 
-            width: 100%; 
-            background-color: #f1f1f1; 
-            color: #000; 
-            text-align: center; 
+
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #f1f1f1;
+            color: #000;
+            text-align: center;
         }
     </style> <!-- added -->
 </head>
 
 <body>
     <header>
-        <h1>ZSU Appliance Repair</h1>
-        <nav>
-            <ul>
-                <li><a href="#services">Our Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
+        <div class="horizontal">
+            <img src="washing.png" />
+            <h1>ZSU Appliance Repair</h1>
+
+        </div>
     </header>
     <main>
         <section id="hero">
